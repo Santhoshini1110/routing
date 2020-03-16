@@ -22,17 +22,6 @@ import {ServicService} from './servic.service';
     HttpClientModule,
     Router,
     RouterModule,
-  RouterModule.forRoot([
-  {
-    path:'',component:AppComponent,
-  },
-  {
-    path:'tollywood',component:Child1Component
-  },
-  {
-    path:'bollywood',component:Child2Component
-  }
-])
 
 
  ],
