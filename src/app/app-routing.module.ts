@@ -9,10 +9,10 @@ const routes: Routes = [{
   path:'',component:AppComponent,
 },
 {
-  path:'tollywood',component:Child1Component
+  path:'Description',component:Child1Component
 },
 {
-  path:'bollywood',component:Child2Component
+  path:'Poster',component:Child2Component
 }
 ]
 ;
