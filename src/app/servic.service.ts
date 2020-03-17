@@ -6,15 +6,17 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ServicService {
-  url=" http://www.omdbapi.com/?i=tt3896198&apikey=4311c958&t=";
-  result;
+  
+  info;
 
   constructor(private http:HttpClient) { }
 
-  getData(movie):Observable<any>
-  {
-   this.result=this.http.get(this.url+movie);
-   return this.result;
-  }
+   storeData(inf){
+     this.info=inf;
+   }
+   getData()
+   {
+     return this.info;
+   }
 
 }

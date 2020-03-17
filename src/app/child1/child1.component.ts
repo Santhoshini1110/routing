@@ -9,19 +9,14 @@ import {Router} from '@angular/router';
   styleUrls: ['./child1.component.css']
 })
 export class Child1Component implements OnInit {
-  movie:string;
+  
   data;
  constructor(private httpclient:HttpClient ,private servic:ServicService,private route:Router)  { }
   
   ngOnInit(): void {
+    this.data=this.servic.getData;
   }
    
-  submit() {
-    this.servic.getData(this.movie).subscribe(data=>{
-      if(data.length){
-        this.data=data;
-      }
-    })
-  }
+
 }
 

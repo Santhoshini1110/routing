@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{ServicService} from '../servic.service';
 
 @Component({
   selector: 'app-child2',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child2.component.css']
 })
 export class Child2Component implements OnInit {
-
-  constructor() { }
+data;
+  constructor(private serv:ServicService ) { }
 
   ngOnInit(): void {
+    this.data=this.serv.getData();
   }
 
 }
